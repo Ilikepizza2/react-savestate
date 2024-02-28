@@ -1,10 +1,11 @@
 {
   "name": "react-statesafe",
-  "version": "1.0.1",
+  "version": "1.0.10",
   "description": "A minimal routing solution for routing in react which saves the state and prevents hard refreshes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buiild": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
   "homepage": "https://github.com/Ilikepizza2/react-statesafe#readme",
   "dependencies": {
     "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-react": "^7.23.3"
   }
 }

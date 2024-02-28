@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, createElement } from "react"
 
 const Route = ({path, component}) => {
     const [curPath, setCurPath] = useState(window.location.pathname)
     useEffect(()=>{
         const navigate = () => {
-        setCurPath(window.location.pathname)
+            setCurPath(window.location.pathname)
         }
         window.addEventListener('navigate', navigate)
         window.addEventListener('popstate', navigate)
-    })
+    }, [curPath])
     return curPath === path ? component() : null;
 }
   
@@ -20,7 +20,7 @@ const Link = ({href, children, state}) => {
         window.dispatchEvent(LocationChange)
     }
     
-    return <a href={href} onClick={(e)=>updateHistory(e)}>{children}</a>
+    return createElement('a', {href: href, onClick: updateHistory}, children)
 }
 
 const getState = () => window.history.state
