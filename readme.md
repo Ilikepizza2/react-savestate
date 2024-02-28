@@ -1,23 +1,23 @@
 
 
-**REACT-STATESAFE**
+**REACT-SAVESTATE**
 
 
-**Description:** react-statesafe is a lightweight npm package designed as a router for React applications which preserves states between route changes. It provides alternative routing functionalities and components to streamline navigation within React-based web applications.
+**Description:** react-savestate is a lightweight npm package designed as a router for React applications which preserves states between route changes. It provides alternative routing functionalities and components to streamline navigation within React-based web applications.
 
-**Installation:** You can install react-statesafe via npm by running the following command:
+**Installation:** You can install react-savestate via npm by running the following command:
 
 
 
 ```bash
- npm install react-statesafe
+ npm install react-savestate
  ```
 
 **Usage:**
 
 ```javascript
 // import the functions
-import { Route, getState, Link } from 'react-statesafe';
+import { Route, getState, Link } from 'react-savestate';
 ```
 ```javascript
 // Define routes using the Route component
@@ -46,6 +46,6 @@ console.log(getState());
 -   Ensure that the state passed to Link is serializable to avoid any issues with preservation and retrieval.
 -   Utilize Route and Link components as replacements for traditional routing and navigation elements within your React application for improved performance and user experience.
 
-**Contributing:** Contributions to react-statesafe are welcome! Feel free to submit issues or pull requests on the GitHub repository: react-statesafe GitHub Repository
+**Contributing:** Contributions to react-savestate are welcome! Feel free to submit issues or pull requests on the GitHub repository: react-savestate GitHub Repository
 
 **License:** This project is licensed under the MIT License - see the LICENSE file for details.

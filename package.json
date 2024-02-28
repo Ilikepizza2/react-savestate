@@ -1,7 +1,7 @@
 {
-  "name": "react-statesafe",
-  "version": "1.0.10",
-  "description": "A minimal routing solution for routing in react which saves the state and prevents hard refreshes",
+  "name": "react-savestate",
+  "version": "1.0.0",
+  "description": "A minimal routing solution for routing in react which saves the state across route changes and prevents hard refreshes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,11 @@
     "url": "git+https://github.com/Ilikepizza2/react-statesafe.git"
   },
   "keywords": [
-    "react-statesafe"
+    "react-savestate",
+    "router",
+    "react",
+    "state",
+    "save"
   ],
   "author": "Ilikepizza2",
   "license": "ISC",

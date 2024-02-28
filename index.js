@@ -19,7 +19,6 @@ const Link = ({href, children, state}) => {
         const LocationChange = new PopStateEvent('navigate')
         window.dispatchEvent(LocationChange)
     }
-    
     return createElement('a', {href: href, onClick: updateHistory}, children)
 }
 
