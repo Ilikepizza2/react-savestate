@@ -1,6 +1,6 @@
 {
   "name": "react-statesafe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimal routing solution for routing in react which saves the state and prevents hard refreshes",
   "main": "index.js",
   "scripts": {
